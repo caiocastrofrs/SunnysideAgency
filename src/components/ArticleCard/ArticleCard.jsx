@@ -31,7 +31,7 @@ const ArticleCard = ({ title, img, text }) => {
   return (
     <ArticleCardStyles>
       <ImgCard />
-      <Heading>{title}</Heading>
+      <Heading primary>{title}</Heading>
       <BodyText>{text}</BodyText>
       {title.slice(0,1) == 'T' ?
       <ArticleButton first={true}>learn more</ArticleButton>
