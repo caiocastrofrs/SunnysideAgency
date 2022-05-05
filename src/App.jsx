@@ -26,6 +26,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
     font-family: 'Barlow', sans-serif;
   }
+  img {
+    max-width: 100%;
+  }
 `
 
 function App() {

@@ -10,11 +10,9 @@ const HeaderStyles = styled.header`
   height: 100vh;
   background-image: url(${heroImage});
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: top;
   background-clip: content-box;
   background-size: cover;
-
   ${Logo} {
     margin: 1.5rem 0 0 1.5rem;
   }
