@@ -5,6 +5,9 @@ const TestimonialStyles = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 8rem;
+  @media (min-width: 75em) {
+    width: 33%;
+  }
 `;
 
 const ProfilePic = styled.img`
@@ -14,6 +17,9 @@ const ProfilePic = styled.img`
 
 const BodyText = styled.p`
   font-size: 1.8rem;
+  @media (min-width: 75em) {
+    font-size: 1.2rem;
+  }
   color: var(--very-dark-gray-blue);
   text-align: center;
   line-height: 2.5rem;

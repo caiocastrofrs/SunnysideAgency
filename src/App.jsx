@@ -7,6 +7,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+    @media (min-width: 48em) {
+      font-size: 75%;
+    }
+    @media (min-width: 75em) {
+      font-size: 100%;
+    }
   }
   :root {
     --primary-soft-red: hsl(7, 99%, 70%);
@@ -20,6 +26,9 @@ const GlobalStyle = createGlobalStyle`
     --dark-grayish-blue: hsl(232, 10%, 55%);
     --grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
+
+    --tablet: 48em;
+    --desktop: 75em;
   }
 
   body {

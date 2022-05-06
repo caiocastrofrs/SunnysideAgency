@@ -7,17 +7,22 @@ const FadeIn = keyframes`
 `
 
 const MenuStyles = styled.ul`
-  width: 290px;
+  width: 90%;
   position: absolute;
   top: 5rem;
   left: 50%;
+  @media (min-width: 75em) {
+    width:  20%;
+    top: 5rem;
+    left: 88%;
+  }
   transform: translateX(-50%);
   transform-origin: top right;
   clip-path: polygon(92% 7%, 100% 0, 100% 100%, 0 100%, 0 7%);
   background-color: var(--white);
   list-style-type: none;
   animation-name: ${FadeIn};
-  animation-duration: .1s;
+  animation-duration: .3s;
   animation-timing-function: linear;
 `;
 const MenuItemStyles = styled.li`
@@ -36,6 +41,9 @@ const MenuItemStyles = styled.li`
   text-align: center;
   color: var(--dark-grayish-blue);
   font-size: 2rem;
+  @media (min-width: 75em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Menu = ({isOpen}) => {

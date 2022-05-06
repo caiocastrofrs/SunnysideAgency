@@ -21,15 +21,25 @@ const List = styled.ul`
   margin: 4rem 0;
   text-align: center;
   font-size: 3rem;
+  @media (min-width: 75em) {
+    font-size: 2.2rem;
+    justify-content: center;
+    gap: 3rem;
+  }
   display: flex;
   justify-content: space-evenly;
   color: var(--primary-dark-des-cyan);
+
 `;
 const ListItem = styled.li`
   display: inline-block;
 `;
 
-const IconImg = styled.img``;
+const IconImg = styled.img`
+  @media (min-width: 75em) {
+    width: 2rem;
+  }
+`;
 
 const Footer = () => {
   return (

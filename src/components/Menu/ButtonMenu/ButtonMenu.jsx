@@ -11,6 +11,9 @@ const ButtonMenu = styled.button`
   text-transform: uppercase;
   display: block;
   margin: 3rem auto;
+  @media (min-width: 75em) {
+    font-size: 1.4rem;
+  }
 `
 
 export default ButtonMenu;

@@ -10,10 +10,14 @@ const images = [Image1, Image2, Image3, Image4];
 const GalleryStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 `;
 
 const Image = styled.img`
   width: 50%;
+  @media (min-width:  75em) {
+      width: 25%;
+  }
 `
 
 const Gallery = () => {

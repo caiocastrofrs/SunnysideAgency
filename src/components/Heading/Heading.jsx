@@ -10,6 +10,9 @@ const Heading = styled.h3`
     "text-transform: uppercase;" +
       "text-align: center;" +
       "margin: 5rem 0 3rem;"}
+  @media (min-width: 75em) {
+    width: 100%;
+  }
 `;
 
 export default Heading;
